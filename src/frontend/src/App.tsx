@@ -98,14 +98,14 @@ function LeadCaptureModal({
   return (
     <Dialog open={open} onOpenChange={handleClose}>
       <DialogContent
-        className="sm:max-w-md bg-[#111] border border-white/10 text-white"
+        className="sm:max-w-md bg-white border border-gray-200 text-gray-900"
         data-ocid="lead_form.dialog"
       >
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-white display-font">
+          <DialogTitle className="text-2xl font-bold text-gray-900 display-font">
             Apply for the Bootcamp
           </DialogTitle>
-          <p className="text-white/60 text-sm">
+          <p className="text-gray-500 text-sm">
             Limited to 10 seats per batch. Secure your spot today.
           </p>
         </DialogHeader>
@@ -120,10 +120,10 @@ function LeadCaptureModal({
             <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-4">
               <CheckCircle2 className="w-8 h-8 text-green-400" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
               Application Submitted!
             </h3>
-            <p className="text-white/60 text-sm">
+            <p className="text-gray-500 text-sm">
               Our team will contact you within 24 hours for the next steps.
             </p>
             <Button
@@ -136,72 +136,72 @@ function LeadCaptureModal({
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-1.5">
-              <Label className="text-white/80 text-sm">Full Name</Label>
+              <Label className="text-gray-700 text-sm">Full Name</Label>
               <Input
                 placeholder="e.g. Priya Sharma"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus:border-brand-red"
+                className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-brand-red"
                 data-ocid="lead_form.input"
                 required
               />
             </div>
             <div className="space-y-1.5">
-              <Label className="text-white/80 text-sm">Email Address</Label>
+              <Label className="text-gray-700 text-sm">Email Address</Label>
               <Input
                 type="email"
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus:border-brand-red"
+                className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-brand-red"
                 required
               />
             </div>
             <div className="space-y-1.5">
-              <Label className="text-white/80 text-sm">Phone Number</Label>
+              <Label className="text-gray-700 text-sm">Phone Number</Label>
               <Input
                 type="tel"
                 placeholder="+91 98765 43210"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus:border-brand-red"
+                className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-brand-red"
                 required
               />
             </div>
             <div className="space-y-1.5">
-              <Label className="text-white/80 text-sm">Your Background</Label>
+              <Label className="text-gray-700 text-sm">Your Background</Label>
               <Select value={background} onValueChange={setBackground}>
-                <SelectTrigger className="bg-white/5 border-white/15 text-white focus:ring-brand-red focus:border-brand-red">
+                <SelectTrigger className="bg-white border-gray-300 text-gray-900 focus:ring-brand-red focus:border-brand-red">
                   <SelectValue placeholder="Select your background" />
                 </SelectTrigger>
-                <SelectContent className="bg-[#1a1a1a] border-white/15">
+                <SelectContent className="bg-white border-gray-200">
                   <SelectItem
                     value="Engineering Student"
-                    className="text-white hover:bg-white/10"
+                    className="text-gray-900 hover:bg-gray-100"
                   >
                     Engineering Student
                   </SelectItem>
                   <SelectItem
                     value="Radiographer"
-                    className="text-white hover:bg-white/10"
+                    className="text-gray-900 hover:bg-gray-100"
                   >
                     Radiographer / Imaging Technologist
                   </SelectItem>
                   <SelectItem
                     value="Medical Technology Student"
-                    className="text-white hover:bg-white/10"
+                    className="text-gray-900 hover:bg-gray-100"
                   >
                     Medical Technology Student
                   </SelectItem>
                   <SelectItem
                     value="CS Graduate"
-                    className="text-white hover:bg-white/10"
+                    className="text-gray-900 hover:bg-gray-100"
                   >
                     CS / BCA Graduate
                   </SelectItem>
                   <SelectItem
                     value="Doctor/Resident"
-                    className="text-white hover:bg-white/10"
+                    className="text-gray-900 hover:bg-gray-100"
                   >
                     Doctor / Resident
                   </SelectItem>
@@ -263,14 +263,14 @@ function BrochureModal({
   return (
     <Dialog open={open} onOpenChange={handleClose}>
       <DialogContent
-        className="sm:max-w-sm bg-[#111] border border-white/10 text-white"
+        className="sm:max-w-sm bg-white border border-gray-200 text-gray-900"
         data-ocid="brochure.dialog"
       >
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold text-white display-font">
+          <DialogTitle className="text-xl font-bold text-gray-900 display-font">
             Download Brochure
           </DialogTitle>
-          <p className="text-white/60 text-sm">
+          <p className="text-gray-500 text-sm">
             Enter your email and we'll send the complete program brochure.
           </p>
         </DialogHeader>
@@ -284,10 +284,10 @@ function BrochureModal({
             <div className="w-14 h-14 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-3">
               <CheckCircle2 className="w-7 h-7 text-green-400" />
             </div>
-            <h3 className="text-lg font-bold text-white mb-1">
+            <h3 className="text-lg font-bold text-gray-900 mb-1">
               Brochure Sent!
             </h3>
-            <p className="text-white/60 text-sm">Check your inbox shortly.</p>
+            <p className="text-gray-500 text-sm">Check your inbox shortly.</p>
             <Button
               onClick={handleClose}
               className="mt-5 bg-brand-red hover:bg-brand-red/90 text-white"
@@ -298,13 +298,13 @@ function BrochureModal({
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-1.5">
-              <Label className="text-white/80 text-sm">Email Address</Label>
+              <Label className="text-gray-700 text-sm">Email Address</Label>
               <Input
                 type="email"
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus:border-brand-red"
+                className="bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-brand-red"
                 data-ocid="brochure.input"
                 required
               />
@@ -362,7 +362,7 @@ function Navbar({ onApply }: { onApply: () => void }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-black/95 backdrop-blur-md border-b border-white/10 shadow-lg"
+          ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -372,7 +372,7 @@ function Navbar({ onApply }: { onApply: () => void }) {
           <div className="w-8 h-8 bg-brand-red rounded-md flex items-center justify-center">
             <Plus className="w-5 h-5 text-white" strokeWidth={3} />
           </div>
-          <span className="text-white font-bold text-xl display-font tracking-tight">
+          <span className="text-gray-900 font-bold text-xl display-font tracking-tight">
             Med<span className="text-brand-red">AI</span>
           </span>
         </a>
@@ -384,7 +384,7 @@ function Navbar({ onApply }: { onApply: () => void }) {
               <button
                 type="button"
                 onClick={() => handleNavClick(link.href)}
-                className="text-white/75 hover:text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-white/8 transition-all"
+                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-100 transition-all"
                 data-ocid="nav.link"
               >
                 {link.label}
@@ -404,7 +404,7 @@ function Navbar({ onApply }: { onApply: () => void }) {
           </Button>
           <button
             type="button"
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-gray-700 p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -424,7 +424,7 @@ function Navbar({ onApply }: { onApply: () => void }) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-black/98 border-t border-white/10 overflow-hidden"
+            className="lg:hidden bg-white/98 border-t border-gray-200 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-1">
               {NAV_LINKS.map((link) => (
@@ -432,7 +432,7 @@ function Navbar({ onApply }: { onApply: () => void }) {
                   type="button"
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className="block w-full text-left text-white/80 hover:text-white py-3 px-4 text-base rounded-lg hover:bg-white/5 transition-all"
+                  className="block w-full text-left text-gray-600 hover:text-gray-900 py-3 px-4 text-base rounded-lg hover:bg-gray-100 transition-all"
                   data-ocid="nav.link"
                 >
                   {link.label}
@@ -477,11 +477,11 @@ function HeroSection({
   return (
     <section
       id="program"
-      className="relative min-h-screen bg-black overflow-hidden flex items-center pt-16"
+      className="relative min-h-screen bg-white overflow-hidden flex items-center pt-16"
     >
       {/* Background grid */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-5"
         style={{
           backgroundImage:
             "linear-gradient(rgba(218,27,54,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(218,27,54,0.3) 1px, transparent 1px)",
@@ -512,22 +512,22 @@ function HeroSection({
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
                 India's First
               </span>
-              <span className="inline-flex items-center text-xs font-semibold text-white/60 border border-white/15 bg-white/5 px-3 py-1.5 rounded-full">
+              <span className="inline-flex items-center text-xs font-semibold text-gray-600 border border-gray-200 bg-gray-50 px-3 py-1.5 rounded-full">
                 AI Healthcare Bootcamp
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight display-font">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight tracking-tight display-font">
               India's First{" "}
               <span className="text-brand-red">Integrated AI</span> in
               Healthcare Imaging Bootcamp
             </h1>
 
-            <p className="text-xl font-semibold text-white/80 tracking-wide uppercase text-sm">
+            <p className="text-xl font-semibold text-gray-700 tracking-wide uppercase text-sm">
               Clinical + AI + Simulation Program
             </p>
 
-            <p className="text-white/60 text-base leading-relaxed max-w-lg">
+            <p className="text-gray-500 text-base leading-relaxed max-w-lg">
               A 6-month industry-integrated program designed to train engineers,
               radiographers, and medical professionals in AI-powered medical
               imaging and healthcare simulation technologies.
@@ -541,7 +541,7 @@ function HeroSection({
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 + pillIdx * 0.08 }}
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-white bg-white/8 border border-white/12 px-3 py-1.5 rounded-full"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-full"
                 >
                   <CheckCircle2 className="w-3.5 h-3.5 text-brand-red flex-shrink-0" />
                   {pill}
@@ -564,7 +564,7 @@ function HeroSection({
                 onClick={onBrochure}
                 size="lg"
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/8 hover:border-white/50 rounded-full text-base bg-transparent"
+                className="border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 rounded-full text-base bg-transparent"
                 data-ocid="hero.secondary_button"
               >
                 Download Brochure
@@ -600,12 +600,12 @@ function HeroSection({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="absolute -bottom-4 -left-4 bg-black border border-white/15 rounded-xl p-4 shadow-xl"
+              className="absolute -bottom-4 -left-4 bg-white border border-gray-200 rounded-xl p-4 shadow-xl"
             >
               <div className="text-2xl font-black text-brand-red display-font">
                 6
               </div>
-              <div className="text-xs text-white/60 font-medium">
+              <div className="text-xs text-gray-500 font-medium">
                 Month Program
               </div>
             </motion.div>
@@ -613,12 +613,12 @@ function HeroSection({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="absolute -top-4 -right-4 bg-black border border-white/15 rounded-xl p-4 shadow-xl"
+              className="absolute -top-4 -right-4 bg-white border border-gray-200 rounded-xl p-4 shadow-xl"
             >
               <div className="text-2xl font-black text-brand-red display-font">
                 10
               </div>
-              <div className="text-xs text-white/60 font-medium">
+              <div className="text-xs text-gray-500 font-medium">
                 Seats Per Batch
               </div>
             </motion.div>
@@ -644,7 +644,7 @@ const STAT_CARDS = [
 
 function EarnSection() {
   return (
-    <section className="bg-[#1a1a1a] py-20 px-4 sm:px-6">
+    <section className="bg-gray-100 py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -653,10 +653,10 @@ function EarnSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <h2 className="text-4xl sm:text-5xl font-black text-white display-font tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 display-font tracking-tight">
             Earn While You Learn
           </h2>
-          <p className="text-white/50 mt-3 max-w-lg mx-auto">
+          <p className="text-gray-500 mt-3 max-w-lg mx-auto">
             Get rewarded for performance while building industry-grade AI
             skills.
           </p>
@@ -670,13 +670,13 @@ function EarnSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: statIdx * 0.1 }}
-              className="card-dark rounded-xl p-6 transition-all duration-300 hover:shadow-red-glow-sm"
+              className="bg-white border border-gray-200 shadow-sm rounded-xl p-6 transition-all duration-300 hover:shadow-red-glow-sm"
             >
               <card.icon className="w-6 h-6 text-brand-red mb-3" />
-              <div className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-1">
+              <div className="text-gray-500 text-xs font-semibold uppercase tracking-widest mb-1">
                 {card.label}
               </div>
-              <div className="text-white font-bold text-sm leading-snug">
+              <div className="text-gray-900 font-bold text-sm leading-snug">
                 {card.value}
               </div>
             </motion.div>
@@ -705,7 +705,7 @@ function EarnSection() {
                 <div className="w-10 h-10 rounded-full bg-brand-red/20 border border-brand-red/30 flex items-center justify-center">
                   <item.icon className="w-5 h-5 text-brand-red" />
                 </div>
-                <span className="text-white font-bold text-sm">
+                <span className="text-gray-900 font-bold text-sm">
                   {item.label}
                 </span>
               </div>
@@ -807,7 +807,7 @@ const PROGRAM_ITEMS = [
 
 function WhyDifferent() {
   return (
-    <section id="program" className="bg-[#111] py-20 px-4 sm:px-6">
+    <section id="program" className="bg-gray-100 py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -818,13 +818,13 @@ function WhyDifferent() {
             <Badge className="bg-brand-red/15 text-brand-red border-brand-red/25 mb-5 text-xs font-semibold px-3 py-1">
               Program Differentiator
             </Badge>
-            <h2 className="text-3xl sm:text-4xl font-black text-white display-font tracking-tight leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl font-black text-gray-900 display-font tracking-tight leading-tight mb-4">
               Not Just an AI Course —{" "}
               <span className="text-brand-red">
                 A Complete Healthcare AI Ecosystem
               </span>
             </h2>
-            <p className="text-white/55 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed mb-6">
               This program covers the complete lifecycle of AI in medical
               imaging — from raw data acquisition to production deployment. No
               other program in India offers this level of clinical + technical
@@ -849,10 +849,10 @@ function WhyDifferent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: progIdx * 0.07 }}
-                className="flex items-start gap-3 bg-white/4 border border-white/8 rounded-xl p-4 hover:border-brand-red/30 transition-all"
+                className="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-4 hover:border-brand-red/30 transition-all"
               >
                 <item.icon className="w-4 h-4 text-brand-red flex-shrink-0 mt-0.5" />
-                <span className="text-white/80 text-sm font-medium leading-snug">
+                <span className="text-gray-700 text-sm font-medium leading-snug">
                   {item.text}
                 </span>
               </motion.div>
@@ -1067,7 +1067,7 @@ const EXPERIENCE_ITEMS = [
 
 function BootcampExperience() {
   return (
-    <section id="bootcamp" className="bg-[#1a1a1a] py-20 px-4 sm:px-6">
+    <section id="bootcamp" className="bg-gray-100 py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -1078,7 +1078,7 @@ function BootcampExperience() {
           <Badge className="bg-brand-red/15 text-brand-red border-brand-red/25 mb-4 text-xs font-semibold px-3 py-1">
             Immersive R&D Program
           </Badge>
-          <h2 className="text-4xl sm:text-5xl font-black text-white display-font tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 display-font tracking-tight">
             The Bootcamp Experience
           </h2>
         </motion.div>
@@ -1100,15 +1100,15 @@ function BootcampExperience() {
               viewport={{ once: true }}
               transition={{ delay: expIdx * 0.1 }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="card-dark rounded-2xl p-6 transition-all duration-300"
+              className="bg-white border border-gray-200 shadow-sm rounded-2xl p-6 transition-all duration-300"
             >
               <div className="w-10 h-10 rounded-xl bg-brand-red/15 border border-brand-red/25 flex items-center justify-center mb-4">
                 <item.icon className="w-5 h-5 text-brand-red" />
               </div>
-              <h3 className="text-white font-bold text-base mb-2">
+              <h3 className="text-gray-900 font-bold text-base mb-2">
                 {item.title}
               </h3>
-              <p className="text-white/50 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed">
                 {item.desc}
               </p>
             </motion.div>
@@ -1292,7 +1292,7 @@ function AdmissionsSection({ onApply }: { onApply: () => void }) {
 
 function FinalCTA({ onApply }: { onApply: () => void }) {
   return (
-    <section className="bg-[#111] py-24 px-4 sm:px-6 relative overflow-hidden">
+    <section className="bg-gray-100 py-24 px-4 sm:px-6 relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-5"
         style={{
@@ -1312,12 +1312,12 @@ function FinalCTA({ onApply }: { onApply: () => void }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white display-font tracking-tight leading-tight mb-5">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 display-font tracking-tight leading-tight mb-5">
             Build Your Career in{" "}
             <span className="text-brand-red">Next-Generation</span> Healthcare
             AI
           </h2>
-          <p className="text-white/55 text-lg mb-10">
+          <p className="text-gray-500 text-lg mb-10">
             Join India's most industry-integrated AI in Healthcare Imaging
             Bootcamp.
           </p>
@@ -1344,7 +1344,7 @@ function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-black border-t border-white/8 py-16 px-4 sm:px-6"
+      className="bg-white border-t border-gray-200 py-16 px-4 sm:px-6"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -1354,11 +1354,11 @@ function Footer() {
               <div className="w-7 h-7 bg-brand-red rounded-md flex items-center justify-center">
                 <Plus className="w-4 h-4 text-white" strokeWidth={3} />
               </div>
-              <span className="text-white font-bold text-lg display-font">
+              <span className="text-gray-900 font-bold text-lg display-font">
                 Med<span className="text-brand-red">AI</span>
               </span>
             </div>
-            <p className="text-white/40 text-sm leading-relaxed">
+            <p className="text-gray-500 text-sm leading-relaxed">
               India's pioneering healthcare AI imaging bootcamp — where clinical
               expertise meets cutting-edge artificial intelligence.
             </p>
@@ -1367,32 +1367,32 @@ function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/6 hover:bg-brand-red/20 border border-white/10 flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-lg bg-gray-100 hover:bg-brand-red/20 border border-gray-200 flex items-center justify-center transition-colors"
               >
-                <SiLinkedin className="w-4 h-4 text-white/60 hover:text-white" />
+                <SiLinkedin className="w-4 h-4 text-gray-500 hover:text-brand-red" />
               </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/6 hover:bg-brand-red/20 border border-white/10 flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-lg bg-gray-100 hover:bg-brand-red/20 border border-gray-200 flex items-center justify-center transition-colors"
               >
-                <SiInstagram className="w-4 h-4 text-white/60 hover:text-white" />
+                <SiInstagram className="w-4 h-4 text-gray-500 hover:text-brand-red" />
               </a>
               <a
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/6 hover:bg-brand-red/20 border border-white/10 flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-lg bg-gray-100 hover:bg-brand-red/20 border border-gray-200 flex items-center justify-center transition-colors"
               >
-                <SiYoutube className="w-4 h-4 text-white/60 hover:text-white" />
+                <SiYoutube className="w-4 h-4 text-gray-500 hover:text-brand-red" />
               </a>
             </div>
           </div>
 
           {/* Programs */}
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-4">
+            <h4 className="text-gray-900 font-bold text-sm uppercase tracking-widest mb-4">
               Programs
             </h4>
             <ul className="space-y-2">
@@ -1404,7 +1404,7 @@ function Footer() {
                 <li key={item}>
                   <a
                     href="#program"
-                    className="text-white/45 hover:text-white text-sm transition-colors"
+                    className="text-gray-500 hover:text-gray-900 text-sm transition-colors"
                   >
                     {item}
                   </a>
@@ -1415,7 +1415,7 @@ function Footer() {
 
           {/* Admissions */}
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-4">
+            <h4 className="text-gray-900 font-bold text-sm uppercase tracking-widest mb-4">
               Admissions
             </h4>
             <ul className="space-y-2">
@@ -1428,7 +1428,7 @@ function Footer() {
                 <li key={item}>
                   <a
                     href="#admissions"
-                    className="text-white/45 hover:text-white text-sm transition-colors"
+                    className="text-gray-500 hover:text-gray-900 text-sm transition-colors"
                   >
                     {item}
                   </a>
@@ -1439,19 +1439,19 @@ function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-4">
+            <h4 className="text-gray-900 font-bold text-sm uppercase tracking-widest mb-4">
               Contact
             </h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2.5 text-white/45 text-sm">
+              <li className="flex items-center gap-2.5 text-gray-500 text-sm">
                 <Phone className="w-3.5 h-3.5 text-brand-red flex-shrink-0" />
                 +91 99999 99999
               </li>
-              <li className="flex items-center gap-2.5 text-white/45 text-sm">
+              <li className="flex items-center gap-2.5 text-gray-500 text-sm">
                 <Mail className="w-3.5 h-3.5 text-brand-red flex-shrink-0" />
                 admissions@medai.in
               </li>
-              <li className="flex items-start gap-2.5 text-white/45 text-sm">
+              <li className="flex items-start gap-2.5 text-gray-500 text-sm">
                 <MapPin className="w-3.5 h-3.5 text-brand-red flex-shrink-0 mt-0.5" />
                 Noida, Uttar Pradesh, India
               </li>
@@ -1459,17 +1459,17 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-white/25 text-xs">
+        <div className="border-t border-gray-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-gray-400 text-xs">
             © {year} MedAI. All rights reserved.
           </p>
-          <p className="text-white/25 text-xs">
+          <p className="text-gray-400 text-xs">
             Built with <Heart className="w-3 h-3 inline text-brand-red" /> using{" "}
             <a
               href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/40 hover:text-white/60 transition-colors underline"
+              className="text-gray-400 hover:text-gray-600 transition-colors underline"
             >
               caffeine.ai
             </a>
@@ -1543,7 +1543,7 @@ export default function App() {
   const closeModal = () => setModal(null);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       <Toaster richColors />
       <Navbar onApply={openApply} />
 
